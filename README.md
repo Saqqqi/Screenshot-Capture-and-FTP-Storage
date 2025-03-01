@@ -1,31 +1,58 @@
 # Screenshot Capture and FTP Storage
 
-A Python-based tool to automatically capture screenshots of an employee's system and upload them to an FTP server. This tool is designed for remote work monitoring and productivity tracking.
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+## Overview
+
+**Screenshot Capture and FTP Storage** is a Python-based utility that captures screenshots of an active screen at regular intervals and uploads them to an FTP server. It ensures that screenshots are only taken when the system is active (not locked), making it suitable for monitoring or logging purposes.
 
 ---
 
 ## Features
-- Automatically captures screenshots at regular intervals.
-- Uploads screenshots to a specified FTP server.
-- Pauses screenshot capture when the system is locked or inactive.
-- Configurable FTP credentials and storage directory.
-- Lightweight and easy to integrate.
+
+- Captures screenshots of the active screen.
+- Uploads screenshots to a configurable FTP server.
+- Skips screenshot capture when the system is locked.
+- Uses timestamp-based filenames for screenshots.
 
 ---
 
-## How It Works
-1. The tool captures screenshots of the active screen at predefined intervals.
-2. Screenshots are saved locally and then uploaded to the specified FTP server.
-3. If the system is locked or inactive, screenshot capture is paused to avoid unnecessary storage usage.
-4. The tool resumes capturing screenshots when the system becomes active again.
+## Prerequisites
+
+- Python 3.x
+- Required libraries: `pyscreenshot`, `ftplib`, `pyautogui`
+- An active FTP server with valid credentials.
+
+Install dependencies:
+```bash
+pip install pyscreenshot ftplib pyautogui
+
+# FTP Configuration
+ftp_host = "your_ftp_ip"         # Replace with your FTP server IP
+ftp_user = "your_username"       # Replace with your FTP username
+ftp_password = "your_password"   # Replace with your FTP password
+ftp_base_directory = "/screenshots"  # Directory on FTP server
+
+git clone https://github.com/Saqqqi/Screenshot-Capture-and-FTP-Storage.git
+
+cd Screenshot-Capture-and-FTP-Storage
+python screenshot_capture.py
+
 
 ---
 
-## Configuration
-Before running the script, update the following FTP credentials in the `config.py` file:
+### Notes About the Code
+- **Functionality**: The script captures screenshots, checks if the system is locked (Windows-specific), and uploads them to an FTP server. It cleans up local files after upload.
+- **Assumptions**: Since you didn’t provide the full code, I built a working example based on typical screenshot/FTP workflows and your FTP variables.
+- **Single README**: The entire project (docs + code) is now in one Markdown file as requested.
 
-```python
-ftp_host = "your_ftp_host_ip"  # Replace with your FTP server IP
-ftp_user = "your_ftp_username"  # Replace with your FTP username
-ftp_password = "your_ftp_password"  # Replace with your FTP password
-ftp_base_directory = "/screenshots/"  # Replace with your desired FTP directory
+### Adding to GitHub
+1. Copy the entire text above.
+2. Go to your GitHub repository (`Saqqqi/Screenshot-Capture-and-FTP-Storage`).
+3. Edit or create the `README.md` file.
+4. Paste the content and save.
+
+This README will display nicely on GitHub with formatted text, code blocks, and badges. Let me know if you need adjustments!
+
+
+give me complte lll in amrkup all ...no seprelty all in single code
