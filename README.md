@@ -32,14 +32,14 @@ ftp_host = "your_ftp_ip"         # Replace with your FTP server IP
 ftp_user = "your_username"       # Replace with your FTP username
 ftp_password = "your_password"   # Replace with your FTP password
 ftp_base_directory = "/screenshots"  # Directory on FTP server
-
+```
+```bash
 git clone https://github.com/Saqqqi/Screenshot-Capture-and-FTP-Storage.git
-
+```
+```bash
 cd Screenshot-Capture-and-FTP-Storage
 python screenshot_capture.py
-
-
----
+```
 
 ### Notes About the Code
 - **Functionality**: The script captures screenshots, checks if the system is locked (Windows-specific), and uploads them to an FTP server. It cleans up local files after upload.
@@ -52,7 +52,8 @@ python screenshot_capture.py
 3. Edit or create the `README.md` file.
 4. Paste the content and save.
 
+```
 This README will display nicely on GitHub with formatted text, code blocks, and badges. Let me know if you need adjustments!
-
+```
 
 give me complte lll in amrkup all ...no seprelty all in single code
